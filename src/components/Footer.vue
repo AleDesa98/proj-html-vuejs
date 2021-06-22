@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="top">
+        <div class="top container">
             <div class="left">
                 <img src="../assets/img/logo.svg" alt="">
                 <ul>
@@ -21,9 +21,18 @@
                 </div>
             </div>
         </div>
-        <div class="button">
-            <div class="left"></div>
-            <div class="right"></div>
+        <div class="button container">
+            <div class="left">
+                <p>&#169; Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-pinterest-p"></i></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </template>
@@ -45,14 +54,13 @@ footer {
     width: 100%;
 
     .top {
-        padding: 20px;
+        padding: 20px 0;
         display: flex;
         justify-content: space-between;
 
         .left {
 
             img {
-                padding-left: 20px;
                 padding-bottom: 30px;
             }
             ul {
@@ -60,12 +68,13 @@ footer {
                 list-style: none;
                 text-transform: capitalize;
                 margin-top: 20px;
+                margin-left: -20px;
+                padding-left: 0;
             }
         }
         .right {
             width: 500px;
             p {
-                padding-right: 20px;
                 color: #55338B;
                 font-size: 25px;
                 text-align: right;
@@ -81,12 +90,34 @@ footer {
                     padding-left: 20px;
                 }
                 .button {
-                    margin-right: 20px;
                     margin-left: 20px;
                     color: white;
                     padding: 15px 20px;
                     background-color: #55338B;
                     border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .button {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        .left {
+            p {
+                font-size: 12px;
+                color: grey;
+            }
+        }
+        .right {
+            ul {
+                list-style: none;
+                display: flex;
+
+                li {
+                    margin-left: 40px;
+                    color: #55338B;
                     cursor: pointer;
                 }
             }

@@ -16,7 +16,7 @@
                 </ul>
             </div>
         </div>
-        <section>
+        <section class="container">
             <span class="title">fresh & tasty bakery every day</span>
             <h1>The Perfect Fresh Bread</h1>
             <p>Cras consequant lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.</p>
@@ -39,7 +39,6 @@ export default {
 
 <style scoped lang="scss">
 header {
-    // height: 500px;
     width: 100%;
     background-position: center center;
     background-size: cover;
@@ -65,8 +64,7 @@ header {
         }
     }
     section {
-        width: 500px;
-        padding: 120px 0 120px 80px;
+        padding: 120px 0 120px 0px;
 
         .title {
             text-transform: uppercase;
@@ -83,6 +81,7 @@ header {
         p {
             color: grey;
             margin: 20px 0 40px 0;
+            width: 500px;
         }
         .button {
             color: #55338B;

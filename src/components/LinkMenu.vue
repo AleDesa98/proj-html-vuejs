@@ -29,6 +29,7 @@ li {
     margin-left: 20px;
     color: #5b2ca2;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 .active {
     border-bottom: 3px solid #5b2ca2;

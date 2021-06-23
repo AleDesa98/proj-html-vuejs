@@ -65,12 +65,12 @@ export default {
     display: flex;
     height: 300px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
     .left {
         width: 25%;
         text-align: center;
         height: 100%;
-        padding: 0 20px;
+        padding-right: 20px;
         margin-top: 70px;
         .title {
             margin-top: 40px;
@@ -102,7 +102,8 @@ export default {
         height: 100%;
         .item {
             width: calc(100% / 4);
-            margin: 0 5px;
+            // margin: 0 5px;
+            margin-left: 10px;
             .p1 {
                 background-image: url(../assets/images/choco-chip-cookies.jpg);
             }

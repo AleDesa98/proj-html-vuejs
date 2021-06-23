@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header :links="this.links_menu" />
+    <Header :links="this.links_menu_header" />
     <Main />
-    <Footer :links="this.links_menu" />
+    <Footer :links="this.links_menu_footer" />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
   },
   data () {
     return {
-      links_menu: [
+      links_menu_header: [
         {
           testo: "home",
           link: "/",
@@ -60,6 +60,36 @@ export default {
           testo: "my account",
           link: "/",
           active: false
+        }
+      ],
+      links_menu_footer: [
+        {
+          testo: "shop",
+          link: "/"
+        },
+        {
+          testo: "about",
+          link: "/"
+        },
+        {
+          testo: "gallery",
+          link: "/"
+        },
+        {
+          testo: "locations",
+          link: "/"
+        },
+        {
+          testo: "journal",
+          link: "/"
+        },
+        {
+          testo: "contact",
+          link: "/"
+        },
+        {
+          testo: "orders",
+          link: "/"
         }
       ]
     }

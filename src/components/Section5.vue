@@ -57,7 +57,7 @@ export default {
 .section5 {
     margin-bottom: 100px;
     .top {
-        padding-top: 60px;
+        padding-top: 150px;
         & > .category {
             font-size: 12px;
             color: grey;

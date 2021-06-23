@@ -13,6 +13,7 @@
                         :link="link.link"
                         :active="link.active"
                     />
+                    <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
             </div>
         </div>
@@ -61,6 +62,12 @@ header {
             display: flex;
             list-style: none;
             text-transform: uppercase;
+            & > li {
+                margin-left: 20px;
+                color: #5b2ca2;
+                padding-bottom: 5px;
+                cursor: pointer;
+            }
         }
     }
     section {

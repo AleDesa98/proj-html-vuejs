@@ -9,8 +9,11 @@
                         :key="index"
                         :text="link.testo"
                         :link="link.link"
-                        :active="link.active"
                     />
+                    <li>
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>0</span>
+                    </li>
                 </ul>
             </div>
             <div class="right">
@@ -52,7 +55,7 @@ export default {
 <style scoped lang="scss">
 footer {
     width: 100%;
-
+    margin-top: 50px;
     .top {
         padding: 20px 0;
         display: flex;
@@ -70,6 +73,18 @@ footer {
                 margin-top: 20px;
                 margin-left: -20px;
                 padding-left: 0;
+                & > li {
+                    margin-left: 20px;
+                    color: #5b2ca2;
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                    & > span {
+                        background-color: #F1EDF4;
+                        border-radius: 50%;
+                        margin-left: 3px;
+                        padding: 3px;
+                    }
+                }
             }
         }
         .right {
@@ -78,7 +93,7 @@ footer {
                 color: #55338B;
                 font-size: 25px;
                 text-align: right;
-                padding-bottom: 30px;
+                padding-bottom: 10px;
             }
             .newsletter {
                 display: flex;
@@ -92,7 +107,7 @@ footer {
                 .button {
                     margin-left: 20px;
                     color: white;
-                    padding: 15px 20px;
+                    padding: 10px 20px;
                     background-color: #55338B;
                     border-radius: 5px;
                     cursor: pointer;
@@ -101,7 +116,7 @@ footer {
         }
     }
     .button {
-        padding: 20px 0;
+        padding: 40px 0;
         display: flex;
         justify-content: space-between;
         .left {
